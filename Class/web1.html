@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3b 1</title>
+    <style>
+        :root {
+            --darkcolor: #FF3000;
+            --lightcolor: #FFA726;
+        }
+
+        .bg-mycolor {
+            background: linear-gradient(to right, var(--darkcolor), var(--lightcolor));
+        }
+
+        .text-mycolor {
+            color: var(--lightcolor);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        * {
+            font-family: serif;
+        }
+
+        #outer {
+            min-height: 1800px;
+            width: 1200px;
+            border: 1px solid black;
+            margin: 0 auto;
+            /* background: linear-gradient(to right, var(--darkcolor), var(--lightcolor)); */
+        }
+
+        #top1 {
+            height: 40px;
+            width: 1200px;
+            background-color: rgba(10, 0, 0, 0.9);
+            padding: 0px 120px;
+            box-sizing: border-box;
+            color: white;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .x {
+            width: 320px;
+            float: left;
+            height: 40px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        #top2 {
+            height: 80px;
+            width: 1200px;
+            background-color: #e2dddb;
+            padding: 0px 150px;
+            box-sizing: border-box;
+        }
+
+        .a1 {
+            height: 80px;
+            width: 300px;
+            float: left;
+            /* background-color: red; */
+        }
+
+        .a2 {
+            height: 80px;
+            width: 200px;
+            float: left;
+            /* background-color: orange; */
+            padding-top: 20px;
+            padding-left: 20px;
+            box-sizing: border-box;
+
+        }
+
+        .a1 span {
+            font-size: 80px;
+            font-weight: bold;
+            /* color: white; */
+            line-height: 70px;
+            letter-spacing: 6px;
+
+        }
+
+        #slider {
+            min-height: 500px;
+            width: 1200px;
+            background: linear-gradient(rgba(0, 0, 0, .1)), url(imgs.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 0px 140px;
+            box-sizing: border-box;
+            animation-name: abc;
+            animation-duration: 16s;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: forwards;
+        }
+
+
+        #slide:hover {
+            animation-play-state: paused;
+        }
+
+        #left {
+            height: 450px;
+            width: 400px;
+            float: left;
+            /* background-color: olive; */
+            padding: 50px;
+            box-sizing: border-box;
+            backdrop-filter: blur(5px);
+            margin: 20px 5px;
+            animation: boxsh 5s infinite;
+        }
+
+
+
+        #right {
+            height: 450px;
+            width: 500px;
+            float: left;
+            padding-top: 100px;
+            color: white;
+            padding-left: 40px;
+            padding-right: 40px;
+            box-sizing: border-box;
+            /* background-color: olivedrab; */
+
+            margin: 12px 0px;
+        }
+
+        .t {
+            height: 50px;
+            width: 100%;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            border-bottom: 2px solid var(--darkcolor);
+            margin: 5px;
+            background: none;
+            padding-left: 15px;
+            box-sizing: border-box;
+            font-size: 15px;
+            color: white;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .ta {
+            height: 50px;
+            width: 100%;
+            background: none;
+            resize: none;
+            margin: 5px;
+            font-size: 15px;
+            color: white;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            padding-left: 15px;
+            box-sizing: border-box;
+            border-bottom: 2px solid var(--darkcolor);
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+        .btn {
+            height: 50px;
+            width: 100%;
+            border: none;
+            color: white;
+
+        }
+
+
+
+
+        @keyframes abc {
+            0% {
+                background: linear-gradient(rgba(0, 0, 0, .1)), url(image3.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+
+            }
+
+            25% {
+                background: linear-gradient(rgba(0, 0, 0, .1)), url(image4.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            50% {
+                background: linear-gradient(rgba(0, 0, 0, .1)), url(image2.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            75% {
+                background: linear-gradient(rgba(0, 0, 0, .1)), url(image5.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            100% {
+                background: linear-gradient(rgba(0, 0, 0, .1)), url(image1.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+
+        @keyframes boxsh {
+
+            0% {
+                box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, .1);
+            }
+
+            100% {
+                box-shadow: 0px 0px 1px 5px rgba(255, 255, 255, .8), 0px 0px 1px 5px rgba(255, 255, 255, .6), 0px 0px 1px 10px rgba(255, 255, 255, .4), 0px 0px 1px 15px rgba(255, 255, 255, .2) inset;
+
+            }
+
+        }
+
+
+        nav {
+            height: 50px;
+            width: 1200px;
+            margin: auto;
+            padding-left: 50px;
+            padding-right: 50px;
+            box-sizing: border-box;
+
+
+        }
+
+        ul {
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            border: 1px solid transparent;
+            box-sizing: border-box;
+            background-color: white;
+            text-align: center;
+        }
+
+        ul a {
+            color: black;
+            text-decoration: none;
+            padding: 0px 30px;
+            line-height: 50px;
+            text-align: center;
+
+        }
+
+        ul a:hover {
+            color: #FF3000;
+            background-color: #FFA726;
+        }
+
+        #service {
+            height: 400px;
+            width: 1200px;
+            padding: 0px 150px;
+            box-sizing: border-box;
+
+        }
+
+        .s {
+            height: 300px;
+            width: 280px;
+            float: left;
+            background-color: white;
+            margin: 4px;
+            margin-top: 40px;
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 30px;
+            box-sizing: border-box;
+            /* top: -25px; */
+            /* position: relative; */
+
+        }
+
+        #intro {
+            min-height: 450px;
+            width: 1200px;
+            background-color: whitesmoke;
+            column-count: 3;
+            column-rule: 5px groove lightsalmon;
+            column-gap: 30px;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        #product,
+        #contactus {
+            min-height: 500px;
+            width: 1200px;
+            background-color: #e2dddb;
+            padding: 15px 150px;
+            box-sizing: border-box;
+
+        }
+
+        #gallery {
+            min-height: 500px;
+            width: 1200px;
+            background-color: #FFA726;
+            padding: 50px 150px;
+            box-sizing: border-box;
+
+        }
+
+        .row {
+            height: 250px;
+            width: 900px;
+            /* background-color: white; */
+        }
+
+        .col {
+            width: 250px;
+            height: 250px;
+            background-color: white;
+        float: left;   
+        margin: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, .1) inset;
+         }
+
+        #contact {
+            min-height: 500px;
+            width: 1200px;
+            background-color: azure;
+
+        }
+
+
+        #login {
+            min-height: 500px;
+            width: 1200px;
+            background-color: rgba(10, 0, 0, 0.2);
+
+        }
+
+        #ufooter {
+            min-height: 500px;
+            width: 1200px;
+            background-color: rgba(10, 0, 0, 0.4);
+
+        }
+
+        #bfooter {
+            min-height: 500px;
+            width: 1200px;
+            background-color: rgba(10, 0, 0, 0.2);
+        }
+
+        #product1 {
+            height: 500px;
+            width: 900px;
+            /* background-color: red; */
+        }
+
+        .product {
+            height: 450px;
+            width: 280px;
+            background-color: white;
+            float: left;
+            margin: 0px 7px;
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        .pb {
+            height: 150px;
+            width: 280px;
+            /* background-color: var(--darkcolor); */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .pt {
+            height: 300px;
+            width: 280px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .pt:hover {
+            filter: grayscale(100%);
+            transition: 2s;
+        }
+        .col p{
+            background: rgba(0, 0, 0, .5);
+            color: white;
+            border-top: 5px double white;
+            border-bottom: 5px double white;
+            transform: translateY(-50px);
+            line-height: 50px;
+            height: 50px;
+            /* opacity: 0; */
+            display: none;
+        }
+
+        .col img:hover + p{
+            display: block;
+        }
+
+        .ribbon{
+            height: 40px;
+            width:250px;
+            color: white;
+            /* position: absolute; */
+            line-height: 40px;
+            background-color: var(bg-mycolor);
+            text-align: center;
+            transform: rotate(45deg);
+            position: fixed;
+            top: 40px;
+            right: -60px;
+            border-top: 2px red solid;
+            border-bottom: 2px red solid;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="top1">
+            <div class="x text-left">An ISO 9001:2015 Certified Software Company</div>
+            <div class="x">
+                <a href="#" class="bg-mycolor text-center"
+                    style="padding: 5px 15px; border-radius:8px;text-decoration:none;color: white;">Click to check
+                    placement
+                    record</a>
+            </div>
+            <div class="x text-right">Click to purchase Online Courses</div>
+        </div>
+        <div id="top2">
+            <div class="a1 text-center" style="background: url(imgs.jpg); background-size: cover;-webkit-text-fill-color: transparent;
+            background-clip: text;">
+                <span>ERA</span>
+            </div>
+            <div class="a2">
+                <b>Call Us</b> <br>
+                +91-8127966016
+            </div>
+            <div class="a2">
+                <b>Mail Us</b> <br>
+                vivandana3@gmail.com
+            </div>
+            <div class="a2" style="padding-top: 25px;">
+                <a href="#" class="bg-mycolor text-center"
+                    style="border-radius:8px; padding:5px 10px;text-decoration:none;color: white;">Contact Us</a>
+            </div>
+
+        </div>
+        <nav class="var(bg-mycolor" )>
+            <ul>
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a href="">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Services</li>
+                </a>
+                <a href="">
+                    <li>Product</li>
+                </a>
+                <a href="">
+                    <li>Plan & Pricing</li>
+                </a>
+                <a href="">
+                    <li>Gallery</li>
+                </a>
+                <a href="">
+                    <li>Contact Us</li>
+                </a>
+                <a href="">
+                    <li>Register</li>
+                </a>
+                <a href="">
+                    <li>Login</li>
+                </a>
+            </ul>
+        </nav>
+        <div id="slider">
+            <div id="left">
+                <input type="text" class="t" placeholder="Name"> <br>
+                <input type="text" class="t" placeholder="Email"> <br>
+                <input type="text" class="t" placeholder="Phone Number"> <br>
+                <textarea name="" class="ta" id="" placeholder="Message"></textarea>
+                <input type="submit" class="btn text-align bg-mycolor" value="SAVE"> <br>
+            </div>
+            <div id="right">
+
+                <p style="font-size: 30px;" class="text-center">Welcome to <b style="color: #FFA726;">TechEra</b></p>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugiat
+                    consequatur saepe optio adipisci. Quae consequatur esse earum maxime perspiciatis!</p>
+                <a href="#" class="bg-mycolor text-center"
+                    style="border-radius:8px; padding:10px;text-decoration:none;color: white;margin-left:200px;">Contact
+                    Us</a>
+            </div>
+        </div>
+
+        <div id="service">
+            <div class="s"> <b>Heading 1</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, facilis. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Incidunt aliquid exercitationem tempora deserunt asperiores
+                    repellendus, quis numquam omnis sequi officia.</p>
+            </div>
+            <div class="s"><b>Heading 1</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, facilis. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Maxime, recusandae? Aliquam sint cupiditate itaque minima ipsum
+                    magnam doloremque adipisci exercitationem?</p>
+            </div>
+            <div class="s"><b>Heading 1</b>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, facilis. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Non sunt labore ipsam nostrum tempora? Deleniti labore blanditiis
+                    dicta obcaecati minima?</p>
+            </div>
+        </div>
+        <div id="intro">
+            <br>
+            <div class="text-center" style="font-size: 30px;column-span: all;">
+                About <b class="bg-color">US</b>
+                <hr style="width: 300px; text-align: center;">
+            </div>
+            <p style="padding:10px 30px; margin: 0;box-sizing: border-box;text-align: justify;">Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Dignissimos, sint eum ullam culpa amet doloribus quam officia
+                similique aut! Nam, quas maxime unde error, veritatis porro id ab eum nihil reiciendis incidunt minima
+                molestias provident saepe tempore necessitatibus. Optio temporibus corporis quo animi deserunt
+                consequuntur pariatur ut rerum quisquam! Eos, temporibus. Accusantium beatae nisi debitis nam dolor
+                necessitatibus sunt cupiditate facilis. Qui quam, recusandae vel labore sit fugiat, voluptatem,
+                quibusdam laborum vero dolore libero dolorem provident incidunt ad. Consequuntur voluptas non fuga? Illo
+                perferendis ut molestiae repudiandae impedit laborum earum, quidem harum fugit itaque ducimus non ab!
+                Rem dignissimos veniam nisi ipsum beatae architecto odio voluptas sit debitis magnam voluptatum
+                inventore provident error, eum iure magni odit repellendus asperiores at doloribus quaerat placeat. Qui,
+                voluptatum. Nulla eos ad doloremque quia, pariatur deserunt eligendi consectetur harum iure voluptate
+                itaque sequi at in beatae, sunt quasi, ipsum a asperiores? Perferendis, repellat perspiciatis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis nihil in vel impedit minus
+                debitis praesentium natus fugit a dicta, reiciendis possimus! Eveniet consequatur harum porro ullam
+                sint, consequuntur esse sit cumque nihil totam ipsum distinctio deserunt voluptatibus fugit et. Nobis
+                culpa fugit, cumque nihil itaque dolor nisi recusandae? Laudantium doloribus eos facilis maxime, optio
+                aliquid! Quisquam, aspernatur laboriosam dolorum maiores mollitia, labore asperiores unde, corrupti
+                magni natus quas delectus quaerat laudantium sequi vel adipisci ipsam voluptate temporibus iste quia.
+                Dolore voluptates autem consectetur facere eum natus, rerum, fugiat dicta maiores molestiae suscipit
+                nisi excepturi ut odit minus totam earum iste itaque culpa atque dolores eligendi. Ex consequatur dolore
+                optio aut odit, incidunt vel ab perspiciatis, sapiente quibusdam rerum totam, architecto cum minus amet
+                porro cupiditate numquam laborum aspernatur doloremque. Ipsam molestias nemo, omnis eos id amet quia
+                dolor iusto doloremque optio illo nihil velit repudiandae rerum magnam consequuntur voluptas itaque
+                voluptates exercitationem, obcaecati autem praesentium eius! Impedit saepe voluptatem debitis quo sint?
+                Enim perferendis voluptate placeat facere error vel quaerat perspiciatis modi doloremque nobis obcaecati
+                alias vitae, ad animi fuga asperiores veritatis ipsam pariatur exercitationem eveniet dolor ea! Veniam
+                blanditiis sed dignissimos cum dolorum libero dolorem hic. Nam?
+            </p>
+        </div>
+        <div id="product">
+            <br>
+            <div class="text-center" style="font-size: 30px;column-span: all;">
+                Our
+                <b class="bg-color">Product</b>
+                <hr style="width: 300px; text-align: center;">
+            </div>
+
+
+            <div id="product1">
+
+                <div class="product">
+                    <div class="pt">
+                        <img src="img.jpeg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="pb">
+                        <center>
+                            <h1 style="margin: 0;
+                        padding: 0;">Product 1</h1>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <button
+                                style="width: 200px; height: 30px;border: none;background: linear-gradient(45deg, #FF3000, #FFA726); border-radius: 20px;color: white;font-size: 20px;">Buy
+                                Now &rarr;</button>
+                        </center>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="pt">
+                        <img src="img.jpg" height="100%" width="100%">
+                    </div>
+                    <div class="pb">
+                        <center>
+                            <h1 style="margin: 0;
+                        padding: 0;">Product 2</h1>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <button
+                                style="width: 200px; height: 30px;border: none;background: linear-gradient(45deg, #FF3000, #FFA726); border-radius: 20px;color: white;font-size: 20px;">Buy
+                                Now &rarr;</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="pt">
+                        <img src="imgs.jpg" height="100%" width="100%">
+                    </div>
+                    <div class="pb">
+                        <center>
+                            <h1 style="margin: 0;
+                        padding: 0;">Product 3</h1>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <button
+                                style="width: 200px; height: 30px;border: none;background: linear-gradient(45deg, #FF3000, #FFA726);  border-radius: 20px;color: white;font-size: 20px;">Buy
+                                Now &rarr;</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div id="gallery">
+            <br>
+            <div class="text-center" style="font-size: 30px;column-span: all;">
+                Image
+                <b style="color: white;">Gallery</b>
+                <hr style="width: 300px; text-align: center;color: white;">
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <img src="imgs.jpg" alt="" height="100%" width="100%">
+                    <p>Heading 1</p>
+                </div>
+                <div class="col">
+                      <img src="imgs.jpg" alt="" height="100%" width="100%">
+                    <p>Heading 2</p>
+
+                </div>
+                <div class="col">
+                      <img src="imgs.jpg" alt="" height="100%" width="100%">
+                    <p>Heading 3</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                      <img src="imgs.jpg" alt="" height="100%" width="100%">
+                    <p>Heading 4</p>
+
+                </div>
+                <div class="col">
+                      <img src="imgs.jpg" alt="" height="100%" width="100%">
+                    <p>Heading 5</p>
+
+                </div>
+                <div class="col">
+                      <img src="imgs.jpg" alt="" height="100%" width="100%">
+                    <p>Heading 6</p>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="contact"></div>
+        <div id="login"></div>
+        <div id="ufooter"></div>
+        <div id="bfooter"></div>
+
+
+
+    </div>
+
+
+    <div class="ribbon bg-mycolor">Enquiryy</div>
+</body>
+
+</html>

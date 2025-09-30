@@ -1,0 +1,190 @@
+transform---
+rotate
+skew
+skewX
+skewY
+translateX
+translateY
+scale
+scaleX
+scaleY
+
+
+
+
+rotate3d(x,y,z,angle);
+rotate(0,0,1,30deg);           // rotateZ(30deg)
+rotate(0,0,-1,30deg);           // rotateZ(-30deg)
+
+//0 means x axis pr rotate nhi krna hai
+// 1 means z axis pr rotate  krna hai
+
+
+
+
+rotate(0,1,0,30deg);           // rotateY(30deg)
+rotate(1,0,0,30deg);           // rotateX(30deg)
+
+rotate(1,1,-1,30deg);           // rotateY(30deg),rotateZ(30deg),rotateX(-30deg)
+
+
+rotate(-1,-1,-1,30deg);           // rotateY(-30deg),rotateZ(-30deg),rotateX(-30deg)
+
+rotate(1,1,1,30deg);           // rotateY(30deg),rotateZ(30deg),rotateX(30deg)
+
+
+---------------------------
+
+transform-style:flat(default value) | preserved3d 
+
+
+  transform: translate3d(100px , 100px , 100px );
+            transform: translate3d(-490px , -180px , -600px );
+
+
+
+
+tag selector/id selector-- 
+descendant selector
+unibersl.,grop, attribute
+class
+
+attribute selector
+syntax
+example=element[attribute="name"]
+tag[attribute="name"]
+
+
+<input type="text" name="" id="">
+    <input type="email">
+    <input type="text" class="abc">
+    <img src="jfhc.jpg" title="google img" alt="">
+    <div class="abc">Div tag</div>
+    <div class="container class">
+Div Tag
+    </div>
+
+<!-- 
+    input[type="text"]{
+      property:value;
+    }
+    input[class="abc"]
+    input[class="container"] slect ip tag which has class container
+input[class] -->
+
+
+input[class='t']  select all input tag which has class and class name start with t...
+img[src$=".jpg"]    its shows that that select all img tag where img src end with .jpg
+img[title$="google"]
+img[title*="ab"]    its shows that that select all img tag where img title contain ab
+img[title*="y"] 
+
+
+
+----------------------------
+
+direct child selevctor
+
+
+<div id="outer">
+    <p>this is para1</p>
+    <p>this is para2</p>
+    <div id="inner">
+    <p>this is para3</p>
+    <p>this is para4</p>
+    </div>
+    <p>this is para5</p>
+</div>
+
+
+#outer > p{
+
+}
+
+#inner > p{
+}
+
+
+
+sibling selector
+
+
+adjacent sibling  (+)
+all sibling  (~)
+
+<div></div>
+<p>p1</p>
+<p>p2</p>
+<p>p3</p>
+<p>p4</p>
+<div id="inner">
+<p>p5</p>
+<p>p6</p>
+</div>
+
+
+adjacent sibling ------
+div + p {        //div ke baad ka pehla pragaraph hi select krega
+  property:value
+}
+
+all sibling -------------------------
+div ~ p{
+  property:value //selects p1,p2,p3,p4
+}
+
+
+Pseudo class / element
+----------------------------------
+:visited
+:classes
+:hover
+:link
+:focus
+:checked
+:selected
+:first-child
+:last-child
+:nth-child(n)
+:nth-child(odd)
+:nth-child(even)
+:disabled
+
+pseudo elements
+::placeholder
+::after
+::before
+::selection
+::first-line
+::last-letter
+-------------------------------------------------------
+display:block
+display:inline
+display:none
+display:inline
+display:flex
+--------------------------------------------------------
+media-query
+--------------------------------------------------------
+@media screen and (min-width:value)
+@media screen and (max-width:value)
+@media screen and (min-width:value) and (max-width-value)
+@media screen and (orientation:portrait)
+@media screen and (orientation:landscape)
+@media (prefers-color-scheme:dark)
+@media (prefers-color-scheme:light)
+-----------------------------------------------------------
+example-----
+@media screen and (min-width 400px)
+{
+  body{
+    background:red;
+  }
+}
+@media screen and (min-width 800px)
+{
+  body{
+    background:yellow;
+  }
+}
+

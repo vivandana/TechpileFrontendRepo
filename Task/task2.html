@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+        #outer {
+            width: 1200px;
+            min-height: 2000px;
+            margin: auto;
+            /* border: 1px solid black; */
+            /* background-color: black; */
+        }
+
+        .header1{
+            height: 100px;
+            width: 1200px;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            background: white;
+            font-weight: bold;
+            font-size: 20px;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+
+        .logo{
+            height: 100px;
+            width: 250px;
+            padding: 5px;
+            padding-left: 15px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .right{
+   height: 100px;
+            width: 700px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .ic{
+            height: 30px;
+            width: 30px;
+            color: #03af9e;
+            line-height: 25px;
+            border: 1px solid #03af9e;
+        }
+
+          .header2{
+            height: 70px;
+            width: 1200px;
+            /* padding: 5px 10px;
+            box-sizing: border-box; */
+            background: #03af9e;
+            font-weight: bold;
+        color: white;
+        line-height: 50px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            /* font-size: 20px; */
+            /* padding-top: 20px; */
+            /* box-sizing: border-box; */
+        }
+        .header2 select{
+            border: none;
+            background: none;
+            font-size: 16px;
+             font-weight: bold;
+        color: white;
+         text-transform: uppercase;
+
+        }
+        nav ul{
+            display: flex;
+            float: left;
+            list-style: none;
+            padding-left: 20px;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: white;
+            padding-left: 20px;
+        }
+
+
+        .intro{
+            background: linear-gradient(rgba(255, 255, 255, 0.4)), url(room1.png);
+            background-size: cover;
+            padding: 180px 50px;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: serif;
+            color: white;
+            background-repeat: initial;
+            height: 500px;
+            width: 1200px;
+            background-attachment: fixed;
+        }
+        .services{
+            height: 730px;
+            width: 1200px;
+            padding: 30px;
+            box-sizing: border-box;
+            margin-bottom: 30px
+                }
+        .top{
+            height: 300px;
+            width: 1200px;
+            padding: 10px;
+            box-sizing: border-box;
+              margin-bottom: 30px
+
+        }
+        .sl1{
+            width: 350px;
+            height: 250px;
+            float: left;
+            text-align: center;
+        }
+        .sc1{
+            width: 350px;
+            height: 250px;
+            float: left;
+            text-align: center;
+
+        }
+        .sr1{
+            width: 350px;
+            height: 250px;
+            float: left;
+            text-align: center;
+
+        }
+        .top img{
+            height: 200px;
+            width: 300px;
+
+        }
+        .about{
+            /* margin-top: 30px; */
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            height: 300px;
+            width: 1200px;
+            background-color: aliceblue;
+        }
+        .ab{
+            height: 200px;
+            width: 1200px;
+            margin: 30px;
+        }
+        .abl{
+            height: 200px;
+            width: 300px;
+            float: left;
+        }
+          .abc{
+            height: 200px;
+            width: 300px;
+            float: left;
+        }
+          .abr{
+            height: 200px;
+            width: 300px;
+            float: left;
+        }
+        .contact{
+            height: 150px;
+            width: 1200px;
+            float: left;
+            text-align: center;
+            background-color: #03af9e;
+            border: 1px solid white;
+            font-size: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .cl{
+            height: 150px;
+            width: 300px;
+            float: left;
+            font-size: 30px;
+          
+            padding: 10px;
+
+            color: white;
+
+        }
+        .cl i{
+            padding-top: 20px;
+            height: 100px;
+            font-size: 50px;
+            width: 100px;
+              border: 2px solid white;
+              border-radius: 50%;
+        }
+         .cc{
+            height: 150px;
+            width: 300px;
+            float: left;
+            color: white;
+            text-align: left;
+            font-size: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+         .cr{
+            height: 150px;
+            width: 500px;
+            float: left;
+
+        }
+        .cr button{
+            height: 60px;
+            width: 200px;
+            margin: 20px;
+            float: right;
+            margin-left: 80px;
+        }
+
+        .dr{
+            height: 500px;
+            width: 1200px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .drl{
+            height: 500px;
+            width: 500px;
+            float: left;
+
+        }
+             .drr{
+            height: 500px;
+            width: 600px;
+            float: left;
+            font-family: serif;
+            padding-top: 20px;
+            box-sizing: border-box;
+
+        }
+        .drr ul{
+            margin: 30px;
+            font-size: 21px;
+        }
+    .drr p{
+            font-size: 21px;
+
+        }
+        .abic{
+            height: 50px;
+            color: #03af9e;
+            width: 50px;
+        }
+</style>
+</head>
+<body>
+    <div id="outer">
+        <section class="header1">
+            <div class="logo">
+                <img src="logo.png" alt="" height="80px" width="160px">
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-clock ic"></i> Mon to Sat: 9.00am to 6.00pm
+                 &nbsp; &nbsp; &nbsp;
+<i class="fa-solid fa-phone ic"></i> +123 456 7890
+                 &nbsp; &nbsp; &nbsp;
+ <i class="fa-solid fa-envelope ic"></i>info@gmail.com
+            </div>
+        </section>
+        <section class="header2">
+            <nav>
+                <ul>
+                    <a href=""><li style="padding-left: 70px;">Home</li></a>
+                    <a href=""><li>
+                        <select name="" id="">
+                            <option value="">Service list</option>
+                            <option value="">opt1</option>
+                            <option value="">opt2</option>
+                        </select>
+                    </li></a>
+                    <a href=""><li>
+                        <select name="" id="">
+                            <option value="">Blog</option>
+                            <option value="">Blog 1</option>
+                            <option value="">Blog 2</option>
+                        </select>
+                    </li></a>
+                    <a href=""><li>contact us</li></a>
+                    <a href=""><li>testimonials</li></a>
+                    <a href=""><li>style guide</li></a>
+                </ul>
+                <div class="nav_right" style="padding-left: 70px;">
+                    <a href=""> <i class="fa-solid fa-magnifying-glass" style="color: white; font-size: 20px;padding-top: 20px;box-sizing: border-box;position: relative; top: 5px;"></i></a>
+                </div>
+            </nav>
+        </section>
+        <section class="intro">
+            <h1>Experts in Heart Health</h1>
+            <br>
+            <p>Your health is our top priority with comprehensive, affordable
+medical health care.</p>
+
+<button style="height: 30px;
+width: 200px;
+background-color: orangered;
+text-transform: uppercase;
+margin-top: 40px; font-weight: bold;
+border: none;
+color: white;
+padding: 5px;">Make an Appointment</button>
+
+        </section>
+        <section class="services">
+            <h1 style="text-align: center;">Cardiology Services</h1>
+            <p  style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellat eligendi ut fugiat, expedita pariatur autem? Ipsam.</p>
+            <br><br>
+            <div class="top">
+                <div class="sl1"> <img src="service-1.jpg" alt=""><span style="text-align: center;"> <br><br> Diagnostic Cardiac</span></div>
+                <div class="sc1">
+                    <img src="service-2.jpg" alt=""><br><br> Vascular Dignostic
+                </div>
+                <div class="sr1">
+                    <img src="service-3.jpg" alt=""><br><br> Invasive Procedures
+                </div>
+            </div>
+            <div class="top">
+                <div class="sl1"> <img src="service-4.jpg" alt=""><span style="text-align: center;"> <br><br> Heart Conditions Treated</span></div>
+                <div class="sc1">
+                    <img src="service-5.jpg" alt=""><br><br> Ven Clinic Services
+                </div>
+                <div class="sr1">
+                    <img src="service-6.jpg" alt=""><br><br> Diagnostic Cardiac
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <h1>Welcome to Our Cardiology Centre</h1>
+            <p>We are commited to excellent & complete patients care.</p>
+            <div class="ab">
+                <div class="abl">
+                    <i class="fa-regular fa-paper-plane abic"></i>Our Mission 
+                    <p>Phasellus varius molestie urnroin viverrais minec laoreet Pha arius lore molestie dingi urnroin viverra minec sit apeget est.</p>
+                </div>
+                <div class="abc">
+<i class="fa-solid fa-eye-low-vision abic"></i>Vision
+<p>Nunc cursus leo risus non ac efficitur vel sed mauris iaculis finibus ex et viverrras posuere vel ex at vulputate.</p>
+               </div>
+                <div class="abr">
+<i class="fa-solid fa-clock abic"></i>24 Hours Support 
+<p>We offer a courtesy shuttle to patients one who need help getting to their scheduled is appointment.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="cl"> <i class="fa-solid fa-phone"></i> </div>
+            <div class="cc"> <span>You can easily reach us 24/7 via the phone number below: <br>
++91-123-4567-789</span></div>
+            <div class="cr"><button>Get a Quote</button></div>
+           
+           
+
+        </section>
+        <section class="dr">
+            <div class="drl">
+                <img src="doctor.png" alt="" style="padding-top: 40px;">
+
+            </div>
+            <div class="drr">
+                <h1>About Dr. Martin Morries</h1> <br> 
+                <h4 style="color: #03af9e;">Senior Dr. at Cardio</h4> <br><br>
+                <hr>
+                <ul>
+                    <li><b>Degree </b>: MBBS, D. Card, MD(Card), FACC</li>
+                    <li><b>Speciality</b>: Cardiology /Heart Specialist</li>
+                    <li><b>Experience</b>: 10 Years</li>
+                </ul>
+ <br><br>
+
+                <p>He has been honoured by Doctorate from four prestigious universities in India.</p> <br>
+                <p style="color: gray;">To protect our patients and ourselves, we strictly maintain sterilization and cross, be confident knowing that we are a team of highly trained and skilled clinicians.</p>
+<br><br>
+                <button style="height: 40px;width: 200px; color: white; border: none; background-color: orangered;margin: 15px;">MEET MY TEAM</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+<!-- 
+
+<i class="fa-solid fa-clock"></i>
+<i class="fa-solid fa-phone"></i>
+ <i class="fa-solid fa-envelope"></i>
+ <i class="fa-solid fa-magnifying-glass"></i>
+ #03af9e
+-->

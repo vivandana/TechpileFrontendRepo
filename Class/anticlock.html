@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anticlock wise rotate transform</title>
+    <style>
+        body{
+            background: rgba(0,0,0,.7);
+        }
+        .outer{
+            height: 50px;
+            width: 50px;
+            margin:100px auto;
+            border: 10px solid transparent;
+            border-top-color: red;
+            border-bottom-color: orange;
+            border-radius: 50%;
+            animation-name: clock;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+
+        }
+
+        .inner{
+            height: 50px;
+            width: 50px;
+            /* margin: auto; */
+            border: 10px solid transparent;
+            border-left-color: blueviolet;
+            border-right-color: yellow;
+            border-radius: 50%;
+            box-sizing: border-box;
+              animation-name: anticlock;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+        @keyframes clock{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+         @keyframes anticlock{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(-720deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

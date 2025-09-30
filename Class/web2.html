@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color1: #002248;
+            --color2: #daaa00;
+        }
+        .btn{
+            border: none;
+            border-radius: 50px;
+            background-color: #daaa00;
+            width: 120px !important;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #outer{
+            min-height: 1500px;
+            margin: auto;
+            width: 1200px;
+            border: 1px solid black;
+        }
+        #top{
+            min-height: 500px;
+            width: 1200px;
+            background: linear-gradient(rgba(0,0,0,.2)), url("image5.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-left:10px  150px  ;
+            box-sizing: border-box;
+            /* padding-right: 150px; */
+        }
+        #top1{
+            height: 480px;
+            width: 900px;
+            /* background-color: red; */
+            margin: auto;
+
+        }
+        #header{
+            height: 50px;
+            width: 900px;
+            background: linear-gradient(rgba(0,0,0,.05));
+        }
+        #logo{
+            height: 50px;
+            width: 300px;
+            float: left;
+            /* background-color: black; */
+            font-size: 40px;
+            line-height: 50px;
+            /* text-align: center; */
+            color: lightcyan;
+        }
+         #menu{
+            height: 50px;
+            width: 600px;
+            float: right;
+            text-align: right;
+            /* background-color: hotpink; */
+
+        }
+
+        #menu ul{
+            list-style: none;
+            transform: translate(-15px,-13px);
+        }
+
+        #menu ul li{
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            width: 80px;
+            color: white;
+            display: inline-block;
+        }
+        #menu ul a{
+            text-decoration: none;
+            color: white;
+
+        }
+        #box{
+            height: 300px;
+            width: 450px;
+            /* background-color: #002248; */
+            margin-top: 80px;
+            color: white;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        #services{
+            height: 500px;
+            width: 900px;
+            padding: 0px 150px;
+            /* background-color: aliceblue; */
+        }
+
+        .row{
+            height: 350px;
+            width: 100%;
+            margin-top: 30px;
+        }
+        .col{
+             height: 350px;
+            width: 32%;
+            margin: 5px;
+            /* background-color: aliceblue; */
+            box-shadow: 0px 0px 10px rgba(0,0,0,.05);
+            padding: 20px;
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+
+        }
+
+        .col img{
+            height: 150px;
+            width: 100%;
+
+        }
+        .col h3{
+            text-align: center;
+            margin: 0;
+        }
+
+        .col p{
+            font-size: 12px;
+        }
+
+        .colbtn{
+            height: 30px;
+            width: 200px;
+            padding:10px 20px;
+            border-radius: 20px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .col a{
+            text-decoration: none;
+color: black;
+text-align: center;
+margin: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <section id="top">
+            <div id="top1">
+                <div id="header">
+                    <div id="logo">
+                        <b>TechEra</b>
+                    </div>
+                    <div id="menu">
+                        <ul>
+                            <a href=""><li>Home</li></a>
+                            <a href=""><li>About</li></a>
+                            <a href=""><li>Services</li></a>
+                            <a href=""><li>Register</li></a>
+            <a href="" class="btn"><li>Login</li></a>
+                        </ul>
+                    </div>
+                </div>
+ <div id="box">
+               <div style="font-size: 28px;font-weight: bold;color: var(--color2);">Book an <span style="background-color: var(--color1);padding:2px 10px;">Exclusive</span></div>
+               <i>Hurry up and book now!</i> 
+               <br>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est rerum illum, porro culpa asperiores nesciunt amet doloribus mollitia sunt officia?</p>
+               <a href="#" style="background: var(--color2);height: 30px;width: 120px;display: block;color: white;text-decoration: none;line-height: 30px;text-align: center;" class="btn">Book now</a>
+            </div>
+            </div>
+        </section>
+        <section id="services">
+            <center><h1>Most Famous Places</h1>
+            <p style="margin: 0;">Lorem ipsum dolor sit amet.</p></center>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <img src="/Class/london.avif" alt="">
+                    <h3>London</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus adipisicing elit. Minus adipisicing elit. Minus dolores </p>
+                    <br>
+                    <a href="" class="colbtn">Read More</a>
+                </div>
+                <div class="col">
+                    <img src="/Class/rome.jpeg" alt="">
+                    <h3>Rome</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus adipisicing elit. Minus adipisicing elit. Minus dolores </p>
+                    <br>
+                    <a href="" class="colbtn">Read More</a>
+                </div>
+                <div class="col">
+                    <img src="/Class/switzerland.jpeg" alt="">
+                    <h3>Switzerland</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus adipisicing elit. Minus adipisicing elit. Minus dolores </p>
+                    <br>
+                    <a href="" class="colbtn">Read More</a>
+                </div>
+            </div>
+              <div class="row">
+                <div class="col">
+                    <img src="/Class/paris.jpeg" alt="">
+                    <h3>Paris</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus adipisicing elit. Minus adipisicing elit. Minus dolores </p>
+                    <br>
+                    <a href="" class="colbtn">Read More</a>
+                </div>
+                <div class="col">
+                    <img src="/Class/Amsterdam.jpeg" alt="">
+                    <h3>Amsterdam</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus adipisicing elit. Minus adipisicing elit. Minus dolores </p>
+                    <br>
+                    <a href="" class="colbtn">Read More</a>
+                </div>
+                <div class="col">
+                    <img src="/Class/barcelona.jpeg" alt="">
+                    <h3>Barcelona</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus adipisicing elit. Minus adipisicing elit. Minus dolores </p>
+                    <br>
+                    <a href="" class="colbtn">Read More</a>
+                </div>
+            </div>
+        </section>
+        <section id="footer"></section>
+    </div>
+</body>
+</html>

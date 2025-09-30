@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        #outer {
+            height: 1200px;
+            width: 1200px;
+            background-color: navy;
+            margin: 200px auto;
+            padding: 50px 50px;
+            box-sizing: border-box;
+            padding-top: 120px;
+        }
+        .row{
+            height: 300px;
+            width: 1000px;
+            /* background-color: aquamarine; */
+            padding: 10px 50px;
+            box-sizing: border-box;
+            margin-left: 50px;
+        }
+        .col{
+             height: 250px;
+            width: 250px;
+            border: 10px solid rgba(217, 20, 20, 0.1);
+            float: left;
+            margin: 10px;
+        }
+           .l0{
+            height: 100px;
+            width: 100px;
+            border-left: 5px solid aqua; 
+            margin: 80px auto;
+            border-radius: 50%;
+            animation: abc 3s infinite ease-out reverse;
+            
+        }
+        .l1{
+            height: 100px;
+            width: 100px;
+            border: 20px solid rgba(0, 0, 0, .1);
+            border-left: 20px solid aqua; 
+            margin: 80px auto;
+            border-radius: 50%;
+            animation: abc 3s infinite ease-out reverse;
+            
+        }
+
+        .l2{
+            border: 20px solid #e5e5e5;
+             height: 100px;
+            width: 100px;
+            border-left: 20px solid aqua;
+            margin: 80px auto;
+            /* position: relative; */
+            border-radius: 50%;
+            animation: abc 3s infinite ease-out;
+        }
+
+        .l3{
+              border: 20px solid #e5e5e5;
+             height: 100px;
+            width: 100px;
+            border-left: 20px solid aqua;
+            border-right: 20px solid aqua;
+            margin: 80px auto;
+            /* position: relative; */
+            border-radius: 50%;
+            animation: abc 3s infinite ease-out reverse;
+        }
+         .l4inner{
+            height: 50px;
+            width: 50px;
+            border: 10px solid rgba(0, 0, 0, .1);
+             border-left: 10px solid blue;
+            margin: 80px auto;
+            border-radius: 50%;
+             position: relative;
+            top: -60px;
+            left: 0px;
+            animation: abc1 3s infinite linear;      
+        }
+           .l4outer{
+            height: 100px;
+            width: 100px;
+            border: 10px solid rgba(0, 0, 0, .1);
+             border-left: 10px solid skyblue;
+            position: relative;
+            top: 60px;
+            left: 60px;
+            border-radius: 50%;
+            animation: abc 3s infinite linear;      
+        }
+
+           .l5inner{
+            height: 50px;
+            width: 50px;
+            border: 10px solid rgba(0, 0, 0, .1);
+             border-left: 10px solid blueviolet;
+             border-right: 10px solid blueviolet;
+            margin: 80px auto;
+            border-radius: 50%;
+             position: relative;
+            top: -60px;
+            left: 0px;
+            animation: abc 3s infinite linear reverse;      
+        }
+           .l5outer{
+            height: 100px;
+            width: 100px;
+            border: 10px solid rgba(0, 0, 0, .1);
+             border-left: 10px solid blue;
+             border-right: 10px solid blue;
+            position: relative;
+            top: 60px;
+            left: 60px;
+            border-radius: 50%;
+            animation: abc 3s infinite linear reverse;      
+        }
+
+        .l6inn{
+            height: 40px;
+            width: 40px;
+            border: 5px solid rgba(0, 0, 0, .1);
+             border-left: 5px solid yellow;
+            margin: 80px auto;
+            border-radius: 50%;
+             position: relative;
+            top: -70px;
+            left: 0px;
+            animation: abc 5s infinite linear reverse;      
+        }
+
+          .l6inner{
+            height: 70px;
+            width: 70px;
+            border: 5px solid rgba(0, 0, 0, .1);
+             border-top: 5px solid orange;
+            
+            margin: 80px auto;
+            border-radius: 50%;
+             position: relative;
+            top: -70px;
+            left: 0px;
+            animation: abc 5s infinite linear reverse;      
+        }
+           .l6outer{
+            height: 100px;
+            width: 100px;
+            border: 5px solid rgba(0, 0, 0, .1);
+             border-bottom: 5px solid red;
+             
+            position: relative;
+            top: 60px;
+            left: 60px;
+            border-radius: 50%;
+            animation: abc 5s infinite linear reverse;      
+        }
+
+
+             .l7inner{
+            height: 50px;
+            width: 50px;
+            border: 10px solid rgba(0, 0, 0, .1);
+             border-left: 5px solid red;
+            margin: 80px auto;
+            border-radius: 50%;
+             position: relative;
+            top: -60px;
+            left: 0px;
+            animation: abc 3s infinite linear reverse;      
+        }
+           .l7outer{
+            height: 100px;
+            width: 100px;
+            border: 5px solid rgba(0, 0, 0, .1);
+             border-left: 5px solid skyblue;
+            position: relative;
+            top: 60px;
+            left: 60px;
+            border-radius: 50%;
+            animation: abc 3s infinite linear reverse;      
+        }
+
+
+        
+
+        @keyframes abc1{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(-720deg);
+            }
+        }
+
+        @keyframes abc{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div class="row">
+            <div class="col">
+                <div class="l0"></div>
+            </div>
+            <div class="col">
+             <div class="l1"></div>
+
+            </div>
+            <div class="col">
+                   <div class="l2"></div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+               <div class="l3"></div>
+            </div>
+            <div class="col">
+                 <div class="l4outer">
+                    <div class="l4inner"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="l5outer">
+                    <div class="l5inner"></div>
+                </div>
+            </div>
+        </div>
+          <div class="row">
+            <div class="col">
+               <div class="l6outer">
+                    <div class="l6inner">
+                        <div class="l6inn"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="l7outer">
+                    <div class="l7inner"></div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+
+</html>

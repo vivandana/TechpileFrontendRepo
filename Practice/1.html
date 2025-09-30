@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Web Page 1</title>
+    <style>
+        /* colors for gradient */
+        :root{
+            --fcolor:#e5e0b0;
+            --scolor:#a1bcce;
+            --tcolor:#5790ce;
+            --color:#69a0db;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #outer{
+            width: 1200px;
+            min-height: 1000px;
+            margin: auto;
+            border: 1px solid black;
+        }
+        #sec1{
+            height: 70px;
+            width: 1200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: white;
+        }
+
+        .left{
+            float: left;
+            width: 400px;
+            height: 70px;
+        }
+        .left span{
+            font-size: 25px;
+            color: #365f80;
+        }
+        .left img{
+            position: relative;
+            top: 5px;
+            left: 5px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+    <div id="sec1">
+        <div class="left">
+            <img src="github.avif" alt="" height="30px" width="30px">
+           <span>&nbsp;Inner Peace</span>
+        </div>
+        <div class="right">
+            <ul>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Practices</li></a>
+                <a href=""><li>Resources</li></a>
+                <a href=""><li>Contact</li></a>
+            </ul>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

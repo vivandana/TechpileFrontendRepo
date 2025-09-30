@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .main {
+
+            height: 1500px;
+            width: 1200px;
+            margin: auto;
+        }
+
+        .head1 {
+            height: 80px;
+            width: 1200px;
+            margin: auto;
+            padding-top: 10px;
+        }
+
+        .left {
+            height: 70px;
+            width: 350px;
+            float: left;
+
+        }
+
+        .center {
+            height: 70px;
+            width: 550px;
+            float: left;
+
+        }
+
+        .right {
+            height: 70px;
+            width: 300px;
+            float: left;
+        }
+        .head2{
+            height: 80px;
+            width: 1200px;
+            background-color: #94c83f;
+             text-align: center;
+        }
+        .h2l,.h2r{
+            height: 80px;
+            width: 300px;
+            float: left;
+        }
+        .h2c{
+             height: 80px;
+            width: 600px;
+            float: left;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+         .head2 ul{
+            display: flex;
+            list-style: none;
+         }
+          .head2 ul a{
+            color: white;
+            text-decoration: none;
+            padding-left: 20px;
+            font-size: 20px;
+          }
+          a select{
+            background-color: #94c83f;
+            border: none;
+             color: white;
+             font-size: 20px;
+             padding-top: 0px;
+          }
+
+          .slide{
+            background:linear-gradient(rgba(255,255,255,.3)),url(img.jpg);
+            backdrop-filter: blur(5px);
+            background-size: 1200px 600px;
+            background-repeat: no-repeat;
+            height: 600px;
+            width: 1200px;
+          }
+          .sl{
+            height: 400px;
+            width: 500px;
+            float: left;
+            padding: 200px 100px;
+            box-sizing: border-box;
+          }
+          .sl button{
+            height: 40px;
+            width: 80px;
+            /* background: none; */
+            border: none;
+            color: white;
+            margin: 5px;
+          }
+           .sr{
+            height: 400px;
+            width: 700px;
+            float: right;
+            text-align: right;
+            padding-top: 80px;
+            box-sizing: border-box;
+          }
+         
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head1" style="font-size: 40px ; text-align: center;">
+            <div class="left">
+                <i class="fa-solid fa-phone"></i> +012 345 6789
+            </div>
+            <div class="center" style="font-size: 50px; text-align: center;"><span
+                    style="color: orange;font-weight: bold;">Farm</span><span
+                    style="color: #94c83f;font-weight: bold;">Fresh</span></div>
+            <div class="right" ">
+                <i class="fa-brands fa-facebook" style="border-radius: 50%; height: 60px; width: 60px; background-color: #94c83f;color:white;padding-top: 10px;"></i>
+                <i class="fa-brands fa-twitter"style="border-radius: 50%; height: 60px; width: 60px; background-color: #94c83f;color:white;padding-top: 10px;"></i>
+                <i class="fa-brands fa-instagram" style="border-radius: 50%; height: 60px; width: 60px; background-color: #94c83f;color:white;padding-top: 10px;"></i>
+                <i class="fa-brands fa-linkedin" style="border-radius: 50%; height: 60px; width: 60px; background-color: #94c83f;color:white;padding-top: 10px;"></i>
+            </div>
+        </div>
+        <div class="head2">
+            <div class="h2l"></div>
+            <div class="h2c">
+                     <ul>
+                <a href="">
+                    <li>HOME</li>
+                </a>
+                <a href="">
+                    <li>ABOUT</li>
+                </a>
+                <a href="">
+                    <li>SERVICE</li>
+                </a>
+                <a href="">
+                    <li>PRODUCT</li>
+                </a>
+                <a href="">
+                    <li><select name="
+                " id="">
+                            <option value="">PAGES</option>
+                            <option value="">PAGES 1</option>
+                            <option value="">PAGES 2</option>
+                        </select></li>
+                </a>
+                <a href="">
+                    <li>CONTACT</li>
+                </a>
+            </ul>
+            </div>
+            <div class="h2r"></div>
+       
+        </div>
+        <div class="slide">
+            <div class="sl">
+                <span style="color: white;font-weight: bold; font-size: 60px; font-family:Georgia, 'Times New Roman', Times, serif;">Our Products</span> <br>
+                <button style="background-color: #94c83f;">Home</button>
+                <button style="background-color: orange;">Products</button>
+            </div>
+            <div class="sr">
+                <img src="farm.png" alt="" height="500px" width="400px">
+            </div>
+        </div>
+        <div class="products" style="padding-top: 50px;">
+           <center> <span style="font-size: 20px;color: #94c83f;">PRODUCTS</span>
+            <h1 style="font-size: 50px;">Our Fresh & Organic Products</h1>
+</center>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class TAsk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: serif;
+        }
+
+        :root {
+            --c1: orange;
+        }
+
+        #outer {
+            min-height: 1400px;
+            width: 1200px;
+            margin: 0px auto;
+            /* background-color: orange; */
+            border:1px solid black
+        }
+
+        #top1 {
+            height: 70px;
+            width: 1200px;
+        }
+
+        .left {
+            height: 70px;
+            width: 400px;
+            float: left;
+            /* background-color: blue; */
+        }
+
+        .right {
+            height: 70px;
+            width: 800px;
+            float: right;
+            /* background-color: yellow; */
+            color: white;
+            /* padding: 30px;
+            box-sizing: border-box; */
+        }
+
+        .r3 {
+            height: 70px;
+            width: 300px;
+            float: left;
+        }
+
+        .r1 {
+            height: 70px;
+            width: 250px;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+            color: black;
+            font-weight: bold;
+        }
+
+        .r2 {
+            height: 70px;
+            width: 250px;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+            color: black;
+            font-weight: bold;
+        }
+
+        .logo {
+            padding: 25px 150px;
+            box-sizing: border-box;
+            color: orangered;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+
+        #top2 {
+            background-color: orangered;
+            color: white;
+            width: 1200px;
+            height: 70px;
+            line-height: 70px;
+            padding: 0px 150px;
+            box-sizing: border-box;
+
+        }
+
+        #top2 ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+
+
+        }
+
+        #top2 ul a {
+            padding-left: 50px;
+        }
+
+        #top2 ul a {
+            text-decoration: none;
+            color:
+                white;
+        }
+
+        .top2r {
+            float: right;
+            position: relative;
+            top: -70px;
+            /* padding-right: 300px; */
+            font-size: 20px;
+
+        }
+
+        .top2r a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .slide {
+            background: url(img.jpg);
+            height: 650px;
+            width: 1200px;
+            background-size: 1200px 600px;
+            background-repeat: no-repeat;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .sleft {
+            height: 600px;
+            width: 700px;
+            float: left;
+            padding: 50px;
+            box-sizing: border-box;
+
+        }
+
+        .sright {
+            height: 600px;
+            width: 500px;
+            float: left;
+            color: white;
+        }
+
+        .btn {
+            height: 30px;
+            width: 150px;
+            /* padding: 10px; */
+            box-sizing: border-box;
+            margin: 0px 10px;
+            border-radius: 5px;
+        }
+
+        .reason{
+            /* margin: 10px auto; */
+            width: 1200px;
+            min-height: 500px;
+            padding: 30px 100px;
+            box-sizing: border-box;
+            height: 600px;
+            text-align: center;
+        }
+        .heading
+        {
+            height: 180px;
+             text-align: center;
+             padding:  0px 200px;
+             box-sizing: border-box;
+        }
+
+        .s{
+            height: 400px;
+            width: 300px;
+            float: left;
+            margin: 0px 35px;
+            box-shadow: 0px 0px 20px gainsboro;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            
+        }
+        .s img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            /* margin-left: 80px; */
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+        .s button{
+            margin: 20px;
+            /* margin-left: 80px; */
+            height: 30px;
+            width: 150px;
+            background-color: orangered;
+            border: none;
+            color:white;
+        }
+        .s h4{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+
+        <div id="top1">
+            <div class="left">
+                <div class="logo">TECHPILE </div>
+            </div>
+            <div class="right">
+                <div class="r3"></div>
+                <div class="r1">Contact Us <br> <span style="color:orange">37535863443</span></div>
+                <div class="r2"> Email <br>
+                    <span style="color:orange">vivandana3@gmail.com</span>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="top2">
+            <ul>
+                <a href="" style="padding-left: 50px;">
+                    <li>Home</li>
+                </a>
+                <a href="">
+                    <li>About</li>
+                </a>
+                <a href="">
+                    <li>Services</li>
+                </a>
+                <a href="">
+                    <li>Products</li>
+                </a>
+                <a href="">
+                    <li>Contact</li>
+                </a>
+                <a href="">
+                    <li>FAQ</li>
+                </a>
+                <!-- <a href=""><li></li></a> -->
+            </ul>
+
+            <div class="top2r">
+                <a href="">CODE HELPER</a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="sleft">
+               <div>
+                 <span style=" color: white;
+              font-size: 50px;
+              font-weight: bold;">We Help Entreprenuers Achieve Their Goals. </span>
+                <p style="color: white; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptas
+                    nemo ducimus ratione quo aliquid!</p>
+               </div>
+                <br>
+                <button class="btn" style="background: orangered; color: white; border: none; ">Request a Demo</button>
+                <button class="btn" style="border: 1px solid white; color: whitesmoke;  background: NONE;">Lorem</button>
+            </div>
+            <!-- <div class="sright"></div> -->
+        </div>
+        <div id="reason">
+           <div class="heading">
+             <font style="font-weight: bold;font-size: 30px;">Six Good Reasons to Choose</font>
+            <p style=" text-align: center; margin-top: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem necessitatibus dolorem iste. Ut nam molestias, error voluptatum magni repellendus eligendi. Obcaecati molestias, eaque quam pariatur minima omnis laborum aliquid, dicta, odio itaque totam alias. Itaque ipsa quod saepe? Porro magnam tempora quos laboriosam cupiditate. Quaerat labore aut fuga unde eligendi?</p>
+</div>
+            <div class="content">
+                <div class="s">
+                    <img src="github.avif" alt="">
+                    <h4>Hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem accusantium quos fuga expedita aut ea eos dolor deleniti nisi!</p>
+                    <button>Read More!!</button>
+                </div>
+                <div class="s">
+                    <img src="github.avif" alt="">
+                    <h4>Hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem accusantium quos fuga expedita aut ea eos dolor deleniti nisi!</p>
+                    <button>Read More!!</button>
+                </div>
+                <div class="s">
+                    <img src="github.avif" alt="">
+                    <h4>Hello</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem accusantium quos fuga expedita aut ea eos dolor deleniti nisi!</p>
+                    <button>Read More!!</button>
+                </div>
+                
+            </div>
+          
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Task 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        #web1 {
+            width: 1200px;
+            min-height: 1000px;
+            margin: auto;
+            border: 1px solid black;
+            /* background-color: black; */
+        }
+
+        #top1 {
+            width: 100%;
+            height: 40px;
+            background-color: #000;
+            line-height: 40px;
+            /* padding: 10px;
+            box-sizing: border-box; */
+            /* border: 1px solid red; */
+        }
+
+        .left {
+            color: white;
+            float: left;
+            padding-left: 60px;
+            box-sizing: border-box;
+            width: 40%;
+        }
+
+        .right {
+            color: white;
+            float: right;
+            text-align: right;
+            padding-right: 60px;
+            box-sizing: border-box;
+            width: 60%;
+        }
+
+        #top2 {
+            width: 100%;
+            height: 60px;
+            padding: 10px 100px;
+            box-sizing: border-box;
+            background-color: white;
+            /* border: 1px solid red; */
+        }
+
+        #slide {
+            width: 100%;
+            height: 400px;
+            /* background-color: #82b441; */
+            background: linear-gradient(45deg, rgba(255, 255, 255, .5)), url(business-people-meeting-looking-presentation-screen.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            /* border: 1px solid red; */
+        }
+
+        .sl {
+            height: 400px;
+            width: 50%;
+            float: left;
+        }
+
+        .sr {
+            height: 400px;
+            width: 50%;
+            float: left;
+        }
+
+        #brand {
+            width: 100%;
+            height: 550px;
+            background-color: #f5f5f5;
+            /* border: 1px solid red; */
+            padding: 20px 60px;
+            box-sizing: border-box;
+
+        }
+
+        .bl,.bc,.br{
+            width: 30%;
+            height: 300px;
+            float: left;
+            box-shadow: 0px 0px 5px gray;
+            margin: 15px;
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+          .bl ,.bc, .br i{
+            color: #82b441;
+            font-size: 40px;
+          }
+
+            .bl, .bc, .br h2{
+                color: black;
+            }
+            
+            .bl,.bc,.br p{
+                color: gray;
+                text-align: center;
+            }
+
+        #brand img {
+            padding-left: 20px;
+        }
+
+        #about {
+            width: 100%;
+            height: 600px;
+            background-color: #82b441;
+            /* border: 1px solid red; */
+        }
+
+        .al,
+        .ac,
+        .ar {
+            width: 30%;
+            height: 400px;
+            float: left;
+            text-align: left;
+            /* padding: 20px; */
+            box-sizing: border-box;
+            color: white;
+        }
+
+        .al,.ac,.ar {
+            background-color: white;
+            color: black;
+            /* padding: 3px; */
+            padding-top: 8px;
+            box-sizing: border-box;
+            margin: 5px;
+            margin-left: 20px;
+            
+        }
+
+        .top2l {
+            float: left;
+            width: 30%;
+            height: 60px;
+            /* border: 1px solid red; */
+        }
+
+        .top2r {
+            float: right;
+            color: black;
+            width: 70%;
+            height: 60px;
+            
+            text-align: center;
+            line-height: 40px;
+            /* border: 1px solid red; */
+        }
+
+        .top2r ul {
+            list-style: none;
+            text-align: right;
+            display: flex;
+            margin: 0;
+            text-align: center;
+            padding: 0;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        .top2r ul a {
+            text-decoration: none;
+            color: white;
+            padding-left: 30px;
+            color: black;
+            text-align: center;
+        }
+          .top2r ul a:hover{
+            background-color: #82b441;
+            color: white;
+          }
+    </style>
+</head>
+
+<body>
+    <div id="web1">
+        <div id="top1">
+
+            <div class="left">
+
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-solid fa-v"></i>
+                <i class="fa-solid fa-t"></i>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-phone" style="color: #82b441;"></i> Customer Care 24/7/365: +91 1234567890
+                &nbsp;&nbsp;&nbsp;
+
+                <i class="fa-solid fa-envelope" style="color: #82b441;"></i> support@domainname.com
+            </div>
+
+        </div>
+        <div id="top2">
+            <div class="top2l">
+                <span style="font-size: 40px;color: white;font-weight: bold;padding: 5px;"><b style="font-weight: bolder;color: #82b441;"><i class="fa-solid fa-code"></i></b></span><b
+                    style="color: black; font-size: 30px;position: relative;top: -4px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    XTREAM</b>
+
+            </div>
+            <div class="top2r" >
+
+                <ul style="color: black;">
+                    <a href="" style="padding-left: 100px;">
+                        <li>Home</li>
+                    </a>
+                    <a href="">
+                        <li>about</li>
+                    </a>
+                    <a href="">
+                        <li>team</li>
+                    </a>
+                    <a href="">
+                        <li>testimonial</li>
+                    </a>
+                    <a href="">
+                        <li>projects</li>
+                    </a>
+                    <a href="">
+                        <li>pricing</li>
+                    </a>
+                    <a href="">
+                        <li>contact</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="slide">
+            <!-- <div class="sl"></div> -->
+            <div class="sr" style="padding-left: 50px;box-sizing: border-box;padding-top: 200px; ">
+                <span
+                    style="font-weight: bold; font-size: 40px; color: #82b441; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;padding-bottom: 15px;">BUSINESS INTELLECT</span><br><br>
+                <p style="color: gray;font-size: 18px;">We  Create Best Oppurtunities.</p> <br>
+
+                
+            </div>
+        </div>
+        <div id="brand">
+           <h1 style="color: black; text-align: center;">Our Services</h1> <br>
+            <p style="color: black; text-align: center;font-size: 18px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Officia neque sit voluptatum perferendis at obcaecati voluptas impedit eveniet, culpa totam ad cumque
+                minus quasi optio dolore nulla corporis ut natus accusamus deleniti necessitatibus, aut quos. Eveniet
+                sunt aut tenetur quisquam.</p>
+
+            <br><br>
+
+            <div class="bl">
+<i class="fa-solid fa-user" style="color: #82b441;"></i>
+<h2 style="font-size:24px ;color: black;">Consulting</h2>
+                <center><hr width="190px" style="color: #82b441;"></center> <br>
+                <p style="font-size: 16px;color: gray;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, distinctio cum voluptatibus rem repellat porro.</p>
+            </div>
+            <div class="bc">
+                <i class="fa-solid fa-sack-dollar" style="color: #82b441;"></i>
+                <h2 style="font-size:24px ;color: black;">Finance</h2>
+                <center><hr width="190px" style="color: #82b441;"></center>
+                   <br>
+                <p style="font-size: 16px;color: gray;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, distinctio cum voluptatibus rem repellat porro.</p>
+            </div>
+            <div class="br">
+                <i class="fa-solid fa-computer" style="color: #82b441;"></i>
+                <h2 style="font-size:24px ;">Development</h2>
+
+                <center><hr width="150px" style="color: #82b441;"></center>
+                <br><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, distinctio cum voluptatibus rem repellat porro.</p>
+            </div>
+        </div>
+        <div id="about" style="padding: 30px 50px; box-sizing: border-box;background: #82b441; text-align: center;">
+            <h1 style="color: white; text-align: center;">Our Process</h1> <br>
+            <p style="color: white; text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Officia neque sit voluptatum perferendis at obcaecati voluptas impedit eveniet, culpa totam ad cumque
+                minus quasi optio dolore nulla corporis ut natus accusamus deleniti necessitatibus, aut quos. Eveniet
+                sunt aut tenetur quisquam.</p>
+            <br><br>
+            <div class="al">
+        
+                <img src="business-meeting-office.png" alt="" height="180px" width="100%">
+                <h2 style="background-color: rgba(255, 255, 255, .5);position: relative;top: -30px;text-align:center;   letter-spacing: 2px;">Consulting</h2>
+                <div class="con" style="padding:
+                20px 40px; text-align: justify;box-sizing: border-box;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sint facilis quaerat voluptatum maiores quas ipsum rerum numquam laborum et facere animi, nam minima officia.</p>
+                </div>
+               
+                
+            </div>
+            <div class="ac">
+              <img src="business-meeting-office.png" alt="" height="180px" width="100%">
+                <h2 style="text-align:center;    background:   rgba(255, 255, 255, .5);position: relative;top: -30px;letter-spacing: 2px;">Finance</h2>
+                <div class="con" style="padding:
+                20px 40px; text-align: justify;box-sizing: border-box;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sint facilis quaerat voluptatum maiores quas ipsum rerum numquam laborum et facere animi, nam minima officia.</p>
+                </div>
+               
+            </div>
+            <div class="ar">
+<img src="business-meeting-office.png" alt="" height="180px" width="100%">
+                <center><h2 style="background-color: rgba(255, 255, 255, .5);position: relative;top: -30px;letter-spacing: 2px;">Designing</h2></center>
+                <div class="con" style="padding:
+                20px 40px; text-align: justify;box-sizing: border-box;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sint facilis quaerat voluptatum maiores quas ipsum rerum numquam laborum et facere animi, nam minima officia.</p>
+                </div>
+               
+         
+            </div>
+        </div> 
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- #82b441
+ <i class="fa-solid fa-phone"></i>
+ <i class="fa-solid fa-envelope"></i>
+<i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-solid fa-v"></i>
+    <i class="fa-solid fa-t"></i>
+    <i class="fa-solid fa-copyright"></i>
+
+
+-->

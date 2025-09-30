@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            box-sizing: border-box;
+        }
+
+        #outer {
+            min-height: 2500px;
+            width: 100%;
+        }
+
+        .top1 {
+            height: 100px;
+            width: 100%;
+            padding-left: 50px;
+            box-sizing: border-box;
+            background-color: #02284c;
+            color: white;
+            padding-top: 10px;
+        }
+
+        .t1l {
+            float: left;
+            width: 50%;
+            height: 100px;
+            padding-left: 100px;
+        }
+
+        .t1r {
+            float: right;
+            width: 50%;
+            height: 100px;
+            padding-right: 100px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            padding-left: 100px;
+
+        }
+
+        .top2 {
+            height: 60px;
+            width: 100%;
+            padding: 20px 40px;
+            padding-left: 80px;
+            box-sizing: border-box;
+            background-color: #024582;
+            color: white;
+        }
+
+        .t2l {
+            height: 60px;
+            width: 70%;
+            float: left;
+            padding-left: 100px;
+
+        }
+
+        .t2r {
+            height: 60px;
+            width: 30%;
+            float: right;
+            padding-right: 100px;
+
+        }
+
+        .t2l ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+
+        .t2l ul a {
+            text-decoration: none;
+            color: white;
+            height: 30px;
+            width: 150px;
+            /* padding-top: 10px; */
+        }
+
+
+        .intro {
+            background: url("h1.jpg");
+            height: 700px;
+            width: 100%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            padding-left: 200px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            padding-top: 120px;
+        }
+
+        .intro div {
+            height: 400px;
+            width: 400px;
+            margin: 50px;
+
+
+        }
+
+        .service {
+            background-color: aliceblue;
+            padding-left: 150px;
+            padding-right: 100px;
+            box-sizing: border-box;
+            height: 400px;
+            width: 100%;
+
+        }
+
+        .row {
+            /* background-color: #02284c; */
+            height: 450px;
+            width: 100%;
+            padding: 8px;
+            /* padding-left: 30px; */
+            /* margin-left: 30px; */
+            position: relative;
+            top: -80px;
+        }
+
+        .col {
+            height: 400px;
+            width: 30%;
+            float: left;
+            background-color: #fff;
+            margin: 10px;
+            box-shadow: 0px 0px 20px 8px gray;
+            border-radius: 15px;
+            padding: 30px;
+            box-sizing: border-box;
+            text-align: center;
+            padding-top: 60px;
+
+        }
+
+        .col i{
+            /* height: 100px; */
+            width: 100px;
+            font-size: 40px;
+            /* margin: 5px; */
+            color: #024581;
+        }
+        .col p{
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin: 5px;
+        }
+
+        .col h1{
+            font-size: 20px;
+        }
+
+        .col a{
+            font-size: 25px;
+            color: black;
+            text-decoration:none;
+        }
+        .about{
+            height: 500px;
+            width: 100%;
+            padding: 0px 180px;
+            background-color: #b8daf5;
+            padding-top: 0px;
+        }
+         .inner{
+            height: 500px;
+            width: 100%;
+            margin: 0;
+        }
+        .innerleft{
+            height: 471px;
+            width: 50%;
+            padding:60px;
+            background-color: #004681;
+            float: left;
+            color: white;
+        }
+          .innerright{
+            height: 471px;
+            width: 50%;
+            background-color: #02284c;
+            float: left;
+        }
+
+        .project{
+            height: 200px;
+            width: 100%;
+            padding: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div class="top1">
+            <div class="t1l">
+                <img src="l2.png" alt="">
+            </div>
+            <div class="t1r">
+                <span>Address : <b>121 King Street Melbourne Victoria 3000 Australia</b></span> <br>
+                <span>Free Call : <b>(917) 814 - 3527</b></span>
+            </div>
+        </div>
+        <div class="top2">
+            <div class="t2l">
+                <ul>
+                    <a href="">
+                        <li>HOME</li>
+                    </a>
+                    <a href="">
+                        <li>ABOUT US</li>
+                    </a>
+                    <a href="">
+                        <li>SERVICES</li>
+                    </a>
+                    <a href="">
+                        <li>BLOG</li>
+                    </a>
+                    <a href="">
+                        <li>CONTACT</li>
+                    </a>
+                </ul>
+
+            </div>
+            <div class="t2r" style="text-align: right;">
+                <a href=""><i class="fa-solid fa-magnifying-glass" style="color:white;"></i></a>
+            </div>
+        </div>
+        <div class="intro">
+            <div>
+                <h1 style="font-size: 40px;color: white;">Entrust Your Business to Us</h1> <br>
+                <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab sunt expedita
+                    distinctio quam blanditiis! Placeat</p> <br><br>
+                <button
+                    style="height: 40px; width: 150px; text-align: center;background-color: #024581;border: none;color: white;border-radius: 10px;">GET
+                    NOW</button>
+            </div>
+        </div>
+        <div class="service">
+            <div class="row">
+                <div class="col">
+                    <h1><i class="fa-solid fa-bullhorn" style="transform: rotate(-30deg);"></i></h1> <br>
+                    <h1>Promotion & Marketing</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quo voluptatum inventore et aspernatur illo dignissimos pariatur optio enim non!
+                       
+                    </p>
+                    <br><br>
+                    <a href="">MORE</a>
+                </div>
+
+
+
+
+                <div class="col">
+                    <h1><i class="fa-solid fa-people-roof"></i></h1>
+                    <br>
+                    <h1>Mentoring Your Business</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus repudiandae quos quisquam voluptate. Perspiciatis, nulla!</p>
+                    <br> <br>
+                    <a href="">MORE</a>
+                </div>
+                <div class="col">
+                    <h1><i class="fa-solid fa-gears"></i></h1> <br>
+                    <h1>Practice Business</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quo voluptatum inventore et aspernatur illo dignissimos pariatur optio enim non!</p>
+                    <br> <br>
+                    <a href="">MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="inner">
+                <div class="innerleft">
+                    <h1 style="color: #7ddcf3;">It's Time to Start Your Business </h1>
+                    <br>
+                    <span>TEMPLATE FOR YOUR BUSINESS</span>
+
+                    <br>
+                    <br><br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sapiente provident incidunt illo nisi praesentium neque dolorem exercitationem autem atque!
+                        At sapiente provident incidunt illo nisi praesentium neque dolorem exercitationem autem atque!
+                    </p>
+                </div>
+                <div class="innerright">
+                    <img src="business-meeting-office.png" alt="" height="100%" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <center>
+                <p>OUR PROJECTS</p>
+                <br>
+                <h1>Activities We Do For Your Business</h1>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

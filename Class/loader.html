@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgba(0,0,0,.7);
+        }
+        .loaderouter{
+            margin: 100px auto;
+            height: 40px;
+            width: 200px;
+            /* background-color: red; */
+        }
+        .loader{
+            height: 40px;
+            width: 10px;
+            margin: 0px 2px;
+            float: left;
+            background-color: olivedrab;
+            animation: abc 2s infinite;
+            animation-delay: 2s;
+        }
+
+        .loader:nth-child(1){
+            animation: abc .8s infinite;
+            background-color: orange;
+            /* transform: scale(3); */
+        }
+            .loader:nth-child(2){
+            animation: abc .7s infinite;
+            background-color: red;
+        }
+            .loader:nth-child(3){
+            animation: abc .6s infinite;
+            background-color: yellow;
+        }
+            .loader:nth-child(4){
+            animation: abc .5s infinite;
+            background-color: green;
+        }
+            .loader:nth-child(5){
+            animation: abc .4s infinite;
+        }
+            .loader:nth-child(6){
+            animation: abc .3s infinite;
+        }
+            .loader:nth-child(7){
+            animation: abc .2s infinite;
+        }
+            .loader:nth-child(8){
+            animation: abc 1s infinite;
+        }
+        @keyframes abc{
+            0% , 100%{
+                transform: translateY(-30px);
+                opacity: .6;
+            }
+            50%{
+                   transform: translateY(0px);
+                opacity: 1;
+            }
+            /* 100%{
+                   transform: scaleY(.8);
+                opacity: .6;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <div class="loaderouter">
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+    </div>
+</body>
+</html>
